@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+header {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  box-shadow: 0px 0px 15px black;
+  position: relative;
+}
