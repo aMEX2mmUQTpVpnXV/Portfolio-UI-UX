@@ -78,4 +78,4 @@ export function Astronaut(props) {
   );
 }
 
-useGLTF.preload("/astronaut.gltf");
+useGLTF.preload("/Portfolio-UI-UX/astronaut.gltf");

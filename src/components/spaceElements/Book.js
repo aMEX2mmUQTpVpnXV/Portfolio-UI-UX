@@ -99,4 +99,4 @@ export function Book(props) {
   );
 }
 
-useGLTF.preload("/book.gltf");
+useGLTF.preload("/Portfolio-UI-UX/book.gltf");

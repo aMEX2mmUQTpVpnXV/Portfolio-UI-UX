@@ -189,4 +189,4 @@ export function BubbleTea(props) {
   );
 }
 
-useGLTF.preload("/bubble_tea.gltf");
+useGLTF.preload("/Portfolio-UI-UX/bubble_tea.gltf");
