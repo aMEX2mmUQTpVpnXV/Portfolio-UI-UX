@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "//amex2mmuqtpvpnxv.github.io/Portfolio-UI-UX/static/css/main.75ba6a65.css",
-    "main.js": "//amex2mmuqtpvpnxv.github.io/Portfolio-UI-UX/static/js/main.163b99e1.js",
+    "main.js": "//amex2mmuqtpvpnxv.github.io/Portfolio-UI-UX/static/js/main.e332ad33.js",
     "static/js/787.1ed0c42c.chunk.js": "//amex2mmuqtpvpnxv.github.io/Portfolio-UI-UX/static/js/787.1ed0c42c.chunk.js",
     "static/media/roomkast.svg": "//amex2mmuqtpvpnxv.github.io/Portfolio-UI-UX/static/media/roomkast.a56f6758ff24578a5862218f1e4b020e.svg",
     "static/media/boba.svg": "//amex2mmuqtpvpnxv.github.io/Portfolio-UI-UX/static/media/boba.fac82ba995a589e7f0641c1df211e3f5.svg",
@@ -24,11 +24,11 @@
     "static/media/ave-xia-rem-y.jpeg": "//amex2mmuqtpvpnxv.github.io/Portfolio-UI-UX/static/media/ave-xia-rem-y.5e8e6fb7b787f2da6beb.jpeg",
     "index.html": "//amex2mmuqtpvpnxv.github.io/Portfolio-UI-UX/index.html",
     "main.75ba6a65.css.map": "//amex2mmuqtpvpnxv.github.io/Portfolio-UI-UX/static/css/main.75ba6a65.css.map",
-    "main.163b99e1.js.map": "//amex2mmuqtpvpnxv.github.io/Portfolio-UI-UX/static/js/main.163b99e1.js.map",
+    "main.e332ad33.js.map": "//amex2mmuqtpvpnxv.github.io/Portfolio-UI-UX/static/js/main.e332ad33.js.map",
     "787.1ed0c42c.chunk.js.map": "//amex2mmuqtpvpnxv.github.io/Portfolio-UI-UX/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.75ba6a65.css",
-    "static/js/main.163b99e1.js"
+    "static/js/main.e332ad33.js"
   ]
 }
