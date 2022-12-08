@@ -31,7 +31,7 @@ function Projects() {
             ~ Introduction ~<hr></hr>
           </div>
           <div style={styles.introText}>
-            Welcome! <br></br>
+            Hello! <br></br>
             <br></br>Here are projects related to user interfaces and design
             that I have worked on. These projects are focused on the design
             decisions made while creating the works and the effects those

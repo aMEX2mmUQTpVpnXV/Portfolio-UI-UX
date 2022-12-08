@@ -6,7 +6,7 @@ import { Book } from "./Book";
 import { BubbleTea } from "./BubbleTea";
 import background from "./../../assets/space/space-bg5.png";
 import { Astronaut } from "./Astronaut";
-import { Text } from "@react-three/drei";
+import { Text, Text3D } from "@react-three/drei";
 
 function Space() {
   return (
@@ -17,8 +17,8 @@ function Space() {
         <ambientLight intensity={0.5} />
         <directionalLight position={[-2, 5, 1]} intensity={10} />
         <Text scale={[2, 2, 2]} position={[0, 3, 0]}>
-          Click an object to see a project or navigate to the projects section
-          for more details!
+          Welcome! Click an object to see a project or navigate to the projects
+          section for more details!
         </Text>
         <Book x={20} y={1} z={-4} rotX={1.2} rotY={1} rotZ={-1} scale={0.003} />
         <Book x={25} y={-1} z={-4} rotX={4} rotY={3} rotZ={1} scale={0.003} />
