@@ -7,8 +7,15 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from "react-three-fiber";
 
 export function BubbleTea(props) {
-  const { nodes, materials } = useGLTF("/bubble_tea.gltf");
+  const { nodes, materials } = useGLTF("/Portfolio-UI-UX/bubble_tea.gltf");
   const myMesh = React.useRef();
+
+  // Take from Stack Overflow
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
+
   useFrame(({ clock }) => {
     const a = clock.getElapsedTime();
     myMesh.current.rotation.x += 0.002;
@@ -30,7 +37,14 @@ export function BubbleTea(props) {
       scale={props.scale}
       position={[props.x, props.y, props.z]}
     >
-      <mesh ref={myMesh} onClick={(e) => console.log("click")}>
+      <mesh
+        ref={myMesh}
+        onClick={() =>
+          openInNewTab(
+            "https://amex2mmuqtpvpnxv.github.io/Personas-StoryBoarding/#Title"
+          )
+        }
+      >
         <mesh
           geometry={nodes.Outside_cup.geometry}
           material={materials["Material.006"]}

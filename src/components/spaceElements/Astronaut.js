@@ -12,9 +12,17 @@ import { useFrame } from "react-three-fiber";
 
 export function Astronaut(props) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF("/astronaut.gltf");
+  const { nodes, materials, animations } = useGLTF(
+    "/Portfolio-UI-UX/astronaut.gltf"
+  );
   const { actions } = useAnimations(animations, group);
   const myMesh = React.useRef();
+
+  // Take from Stack Overflow
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
 
   useFrame(({ clock }) => {
     const a = clock.getElapsedTime();
@@ -43,7 +51,14 @@ export function Astronaut(props) {
         Math.PI * props.rotZ,
       ]}
     >
-      <mesh ref={myMesh} onClick={(e) => console.log("click")}>
+      <mesh
+        ref={myMesh}
+        onClick={() =>
+          openInNewTab(
+            "https://amex2mmuqtpvpnxv.github.io/Portfolio-UI-UX/About"
+          )
+        }
+      >
         <group name="Sketchfab_Scene">
           <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
             <group
