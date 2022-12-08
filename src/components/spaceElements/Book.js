@@ -13,7 +13,10 @@ import { useFrame } from "react-three-fiber";
 export function Book(props) {
   const { nodes, materials } = useGLTF("/book.gltf");
   const myMesh = React.useRef();
-
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
   useFrame(({ clock }) => {
     const a = clock.getElapsedTime();
     myMesh.current.rotation.x += 0.01;
@@ -39,7 +42,12 @@ export function Book(props) {
         Math.PI * props.rotZ,
       ]}
     >
-      <mesh ref={myMesh} onClick={(e) => console.log("click")}>
+      <mesh
+        ref={myMesh}
+        onClick={() =>
+          openInNewTab("https://amex2mmuqtpvpnxv.github.io/Royal-Road/")
+        }
+      >
         <group rotation={[-Math.PI / 2, 0, 0]}>
           <group rotation={[Math.PI / 2, 0, 0]}>
             <group rotation={[-Math.PI / 2, 0, 0]} scale={232.93}>
