@@ -11,7 +11,7 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from "react-three-fiber";
 
 export function Book(props) {
-  const { nodes, materials } = useGLTF("/Portfolio-UI-UX/book.gltf");
+  const { nodes, materials } = useGLTF("/book.gltf");
   const myMesh = React.useRef();
 
   // Take from Stack Overflow
@@ -110,4 +110,4 @@ export function Book(props) {
   );
 }
 
-useGLTF.preload("/Portfolio-UI-UX/book.gltf");
+useGLTF.preload("/book.gltf");
