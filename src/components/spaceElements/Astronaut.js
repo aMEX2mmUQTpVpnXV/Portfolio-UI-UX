@@ -16,12 +16,6 @@ export function Astronaut(props) {
   const { actions } = useAnimations(animations, group);
   const myMesh = React.useRef();
 
-  // Take from Stack Overflow
-  const openInNewTab = (url) => {
-    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
-    if (newWindow) newWindow.opener = null;
-  };
-
   useFrame(({ clock }) => {
     const a = clock.getElapsedTime();
     myMesh.current.rotation.x += 0.0;
@@ -49,14 +43,7 @@ export function Astronaut(props) {
         Math.PI * props.rotZ,
       ]}
     >
-      <mesh
-        ref={myMesh}
-        onClick={() =>
-          openInNewTab(
-            "https://amex2mmuqtpvpnxv.github.io/Portfolio-UI-UX/About"
-          )
-        }
-      >
+      <mesh ref={myMesh} onClick={(e) => console.log("click")}>
         <group name="Sketchfab_Scene">
           <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
             <group
