@@ -8,7 +8,7 @@ function Banner(props) {
         whileHover={{ scale: props.hoverScale }}
         whileTap={{ scale: props.tapScale }}
       >
-        <img src={props.img} alt="Project 1 Banner" style={styles.img} />
+        <img src={props.img} alt={props.alt} style={styles.img} />
       </motion.div>
     </div>
   );
