@@ -11,7 +11,7 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from "react-three-fiber";
 
 export function Book(props) {
-  const { nodes, materials } = useGLTF("/book.gltf");
+  const { nodes, materials } = useGLTF("book.gltf");
   const myMesh = React.useRef();
   const openInNewTab = (url) => {
     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -107,4 +107,4 @@ export function Book(props) {
   );
 }
 
-useGLTF.preload("/book.gltf");
+useGLTF.preload("book.gltf");

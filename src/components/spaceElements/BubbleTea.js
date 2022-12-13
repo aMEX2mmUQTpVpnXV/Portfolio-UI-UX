@@ -7,7 +7,7 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from "react-three-fiber";
 
 export function BubbleTea(props) {
-  const { nodes, materials } = useGLTF("/bubble_tea.gltf");
+  const { nodes, materials } = useGLTF("bubble_tea.gltf");
   const myMesh = React.useRef();
   const openInNewTab = (url) => {
     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -200,4 +200,4 @@ export function BubbleTea(props) {
   );
 }
 
-useGLTF.preload("/bubble_tea.gltf");
+useGLTF.preload("bubble_tea.gltf");
