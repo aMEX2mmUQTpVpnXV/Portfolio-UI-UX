@@ -12,7 +12,7 @@ import { useFrame } from "react-three-fiber";
 
 export function Astronaut(props) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF("astronaut.gltf");
+  const { nodes, materials, animations } = useGLTF("/astronaut.gltf");
   const { actions } = useAnimations(animations, group);
   const myMesh = React.useRef();
   const openInNewTab = (url) => {
@@ -85,4 +85,4 @@ export function Astronaut(props) {
   );
 }
 
-useGLTF.preload("astronaut.gltf");
+useGLTF.preload("/astronaut.gltf");
