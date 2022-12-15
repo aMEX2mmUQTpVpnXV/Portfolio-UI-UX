@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import NavigationBar from "../navigation/Navbar";
 import Banner from "../animated/Banner";
 import project1 from "../../assets/banners/boba.svg";
@@ -76,36 +77,24 @@ function Projects() {
               on customer's experiences.
             </div>
           </div>
-          <div
-            onClick={() =>
-              openInNewTab(
-                "https://amex2mmuqtpvpnxv.github.io/Personas-StoryBoarding/#Title"
-              )
-            }
-          >
+          <Link to="/personas" target="_blank" rel="noopener noreferrer">
             <Banner
               hoverScale={hoverScale}
               tapScale={tapScale}
               img={project1}
             />
-          </div>
+          </Link>
         </div>
 
         {/* Iterative Design */}
         <div style={styles.projectReverse}>
-          <div
-            onClick={() =>
-              openInNewTab(
-                "https://amex2mmuqtpvpnxv.github.io/Iterative-Design/"
-              )
-            }
-          >
+          <Link to="/iterative" target="_blank" rel="noopener noreferrer">
             <Banner
               hoverScale={hoverScale}
               tapScale={tapScale}
               img={project2}
             />
-          </div>
+          </Link>
           <div style={styles.caption}>
             <div style={styles.title}>
               <div style={{ color: "#008FDF" }}>Iterative Design</div>
@@ -131,17 +120,13 @@ function Projects() {
               visually appealing interface.{" "}
             </div>
           </div>
-          <div
-            onClick={() =>
-              openInNewTab("https://amex2mmuqtpvpnxv.github.io/Royal-Road/")
-            }
-          >
+          <Link to="/royal-road" target="_blank" rel="noopener noreferrer">
             <Banner
               hoverScale={hoverScale}
               tapScale={tapScale}
               img={project3}
             />
-          </div>
+          </Link>
         </div>
       </div>
     </div>

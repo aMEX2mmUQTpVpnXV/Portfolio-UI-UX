@@ -6,6 +6,7 @@ import About from "../pages/About";
 import Projects from "../pages/Projects";
 import Credits from "../pages/Credits";
 import RoyalRoad from "../pages/RoyalRoad/src/RoyalRoad";
+import Personas from "../pages/Personas/Personas";
 
 export default function Navigation() {
   return (
@@ -16,7 +17,8 @@ export default function Navigation() {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/projects" element={<Projects />} />
           <Route exact path="/credits" element={<Credits />} />
-          <Route exact path="royal-road" element={<RoyalRoad />} />
+          <Route exact path="/royal-road" element={<RoyalRoad />} />
+          <Route exact path="personas" element={<Personas />} />
           <Route exact path="/" element={<Home />} />
         </Routes>
       </Router>
